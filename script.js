@@ -20,7 +20,7 @@ const interval = setInterval(function () {
   percent.innerHTML = Math.trunc((total / "365") * "100") + "%";
 
   //progress
-  progress.style.width = Math.trunc((total / "365") * "100") + "%";
+  progress.style.width = Math.trunc((total / "365") * "100") - 1 + "%";
 
   //interval time
 }, 100);
