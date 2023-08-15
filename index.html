@@ -1,16 +1,52 @@
 <html>
   <head>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+
     <script defer src="./script.js"></script>
   </head>
 
   <body>
     <div class="container">
-      <div id="info"><span id="days_total"></span> of 2023 has passed</div>
+      <div id="info">
+        <span id="days_percentage"></span> of <span id="year"></span>&nbsp;has
+        passed
+      </div>
       <br />
       <div class="progress0"></div>
       <div class="progress1" id="progress"></div>
+
+      <!--
+      Extras
+      -->
+      <h3 style="margin-top: 10em">More Information </h3>
+      <div class="more">
+        <p class="mores">
+          Days Total :&nbsp;<span class="spaninfo" id="days_total">0</span>
+          <br />
+        </p>
+        <p class="mores">
+          Days Percentage Decimals :&nbsp;<span
+            class="spaninfo"
+            id="days_percentage_decimals"
+            >0</span
+          >%<br />
+        </p>
+        <p class="mores">
+          Server Time :&nbsp;<span class="spaninfo" id="servertime">0</span
+          ><br />
+        </p>
+        <p class="mores">
+          Server Time 12H :&nbsp;<span class="spaninfo" id="servertime12H"
+            >0</span
+          ><br />
+        </p>
+        <p class="mores">
+          Server Time 24H :&nbsp;<span class="spaninfo" id="servertime24H"
+            >0</span
+          ><br />
+        </p>
+      </div>
     </div>
   </body>
 </html>
