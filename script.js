@@ -45,7 +45,7 @@ fetch("https://timeapi.mininxd.my.id/", {
     //percentage of days
     const percent = document.getElementById("days_percentage");
     //disable decimals of days total
-    const total = Difference_In_Days +1;
+    const total = Difference_In_Days + 1;
 
     //set timeout for declaring progress and % after 2s if not loaded
     const timeout = setTimeout(function () {
