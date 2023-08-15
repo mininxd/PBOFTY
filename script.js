@@ -1,4 +1,4 @@
-//time target
+//time start
 var date1 = new Date("01/01/2023");
 //time now
 var date2 = new Date();
