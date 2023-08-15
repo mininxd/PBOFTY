@@ -5,5 +5,4 @@
 
 inspired by [facebook page](https://www.facebook.com/progressofyear) but in web version.
 
-The year now synchronized with API <br> https://timeapi.mininxd.my.id/
-[Open Source](https://github.com/mininxd/timeAPI)
+The year now synchronized with [TimeAPI](https://github.com/mininxd/timeAPI)
