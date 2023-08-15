@@ -5,4 +5,4 @@
 
 inspired by [facebook page](https://www.facebook.com/progressofyear) but in web version.
 
-API Endpoint : https://timeapi.mininxd.my.id/
+The year now synchronized with API <br> https://timeapi.mininxd.my.id/
