@@ -8,19 +8,19 @@ fetch("https://timeapi.mininxd.my.id/", {
   })
   .then((data) => {
     console.log(data);
-    const serverdate = data.date;
-    const serverday = data.day;
-    const servertime = data.time;
-    const serveryear = data.year;
-    const servertime12h = data.time12;
-    const servertime24h = data.time24;
+    const serverdate = data.wib[0].date;
+    const serverday = data.wib[0].day;
+    const servertime = data.wib[0].time;
+    const serveryear = data.wib[0].year;
+    const servertime12h = data.wib[0].time12;
+    const servertime24h = data.wib[0].time24;
 
     //leap year check
-    let leap = new Date(data.year, 1, 29).getDate() === 29;
+    let leap = new Date(data.wib[0].year, 1, 29).getDate() === 29;
     if (leap) {
-      console.log("leap year is " + leap);
+      console.log("is leap year? " + leap);
     } else {
-      console.log("leap year is " + leap);
+      console.log("is leap year? " + leap);
     }
     //max days if leap year
     if (leap === true) {
@@ -32,7 +32,7 @@ fetch("https://timeapi.mininxd.my.id/", {
     //
     //
     //time start (1 january ××××)
-    var date1 = new Date("01/01/" + data.year);
+    var date1 = new Date("01/01/" + data.wib[0].year);
     //time now
     var date2 = new Date(serverdate);
     //get time of hour
@@ -72,7 +72,8 @@ fetch("https://timeapi.mininxd.my.id/", {
     document.getElementById("servertime").innerHTML = servertime;
 
     document.getElementById("servertime12H").innerHTML =
-      servertime12h + " " + data.AMPM.toUpperCase();
+      servertime12h + " " + data.wib[0].AMPM.toUpperCase();
 
     document.getElementById("servertime24H").innerHTML = servertime24h;
   });
+      
