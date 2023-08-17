@@ -9,7 +9,7 @@ fetch("https://timeapi.mininxd.my.id/", {
   .then((data) => {
     console.log(data);
     const serverdate = data.wib[0].date;
-    const serverday = data.wib[0].day;
+    const serverday = data.wib[0].weekday;
     const servertime = data.wib[0].time;
     const serveryear = data.wib[0].year;
     const servertime12h = data.wib[0].time12;
