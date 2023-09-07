@@ -1,9 +1,3 @@
-function time() {
-  for (i = 1; i <= 10; i++) {
-    console.log(i);
-  }
-}
-
 var x = setInterval(function () {
   fetch("https://timeapi.mininxd.my.id/", {
     header: {
