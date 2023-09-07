@@ -1,3 +1,9 @@
+function time() {
+  for (i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+}
+
 var x = setInterval(function () {
   fetch("https://timeapi.mininxd.my.id/", {
     header: {
@@ -61,6 +67,9 @@ var x = setInterval(function () {
 
       document.getElementById("maxdays").innerHTML = maxdays;
 
+      document.getElementById("serverdate").innerHTML = serverdate;
+      
+      
       document.getElementById("servertime").innerHTML = servertime;
 
       document.getElementById("servertime12H").innerHTML =
