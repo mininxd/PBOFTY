@@ -71,4 +71,4 @@ var x = setInterval(function () {
 
       document.getElementById("servertime24H").innerHTML = servertime24h;
     });
-}, 1000);
+}, 200);
