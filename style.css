@@ -54,3 +54,10 @@ p.footer {
 i.bi { 
   font-size: 14px;
 }
+
+
+
+@media (orientation: landscape) {
+  div.container {
+    padding: 5em;
+  }
