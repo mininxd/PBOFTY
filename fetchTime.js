@@ -21,7 +21,7 @@ export function waktu() {
 
 var dateOngoing = Number(data.wib[0].unixtime);
 var yearOngoing = Number(data.wib[0].year);
-thisYear.innerHTML = yearOngoing;
+document.getElementById("thisYear").innerHTML = yearOngoing.toString();
 // console.log(yearOngoing);
 
 var dateStart = new Date("January 1," + yearOngoing + ", 00:00:00");
