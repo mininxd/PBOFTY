@@ -59,5 +59,6 @@ i.bi {
 
 @media (orientation: landscape) {
   div.container {
-    padding: 4em 15em 1em 15em;
+    padding: 2em 15em 2em 15em;
   }
+}
