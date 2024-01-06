@@ -1,43 +1,56 @@
-* {
+html {
+  scroll-behavior: smooth;
   position: relative;
-}
-.container {
-  width: 94%;
-  margin-left: 3%;
-}
-.progress0 {
+  font-family: 'Product Sans Regular', Sans-Serif;
   z-index: 0;
+}
+body, body.body {
+  background: #f1f1f1;
+}
+
+div.container {
+  padding: 1em;
+}
+div.progressBarContainer {
   width: 100%;
-  height: 48px;
-  background: #343434;
-  box-shadow: 1px 1px 10px #000000a0;
+  height: 50px;
 }
-.progress1 {
-  top: -45px;
-  left: 2px;
-  z-index: 1;
-  height: 43px;
-  background: #0bea50;
-}
-#progress {
+div.progressBarTop {
   width: 0;
+  height: 40px;
+  background: linear-gradient(45deg, #05FC31, #01D37A)
 }
-#info {
-  font-family: Sans-Serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-body {
-  margin-top: 30%;
-}
-p.mores {
-	line-height: 1px;
-}
-div span.spaninfo {
-  text-align: right;
-  right: 0;
-}
-div.more {
-  display: ;
+div.progressBarBottom {
+  padding: 2px;
+  position: relative;
   width: 100%;
+  height: 40px;
+  background: #313131;
+}
+
+div.moreInfo {
+  width: 100%;
+  margin-top: 5em;
+}
+div.moreInfo h4 {
+  font-family: 'Product Sans Regular', Sans-Serif;
+  font-weight: 400;
+  line-height: 0px;
+}
+div.moreInfo span {
+  display: flex;
+  justify-content: flex-end;
+}
+a, a:link, a:visited, a:hover {
+  color: #000;
+}
+p.footer {
+  position: fixed;
+  left: 20px;
+  bottom: 1em;
+  font-weight: 400;
+  font-size: 16px;
+}
+i.bi { 
+  font-size: 14px;
 }

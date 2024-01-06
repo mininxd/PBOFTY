@@ -1,57 +1,43 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-
-    <script defer src="./script.js"></script>
+<script type="module" src="script.js"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
   </head>
+<body class="body">
 
-  <body>
-    <div class="container">
-      <div id="info">
-        <span id="days_percentage"></span> of <span id="year"></span>&nbsp;has
-        passed
-      </div>
-      <br />
-      <div class="progress0"></div>
-      <div class="progress1" id="progress"></div>
+<div class="container">
+<br><br>
+  
+  <h2><span id="barPercent">0%</span> of 2024 has passed. </h2>
+<div class="progressBarContainer">
+  <div class="progressBarBottom">
+    <div id="progressBar" class="progressBarTop"></div>
+  </div>
+</div>
 
-      <!--
-      Extras
-      -->
-      <h3 style="margin-top: 10em">More Information</h3>
-      <div class="more">
-        <p class="mores">
-          Days Total :&nbsp;<span class="spaninfo" id="days_total">0</span
-          >/<span id="maxdays" class="spaninfo">0</span>
-          <br />
-        </p>
-        <p class="mores">
-          Server Date :&nbsp;<span class="spaninfo" id="serverdate">0</span
-          ><br />
-        </p>
-        <p class="mores">
-          Year Percentage Decimals :&nbsp;<span
-            class="spaninfo"
-            id="days_percentage_decimals"
-            >0</span
-          >%<br />
-        </p>
-        <p class="mores">
-          Server Time :&nbsp;<span class="spaninfo" id="servertime">0</span
-          ><br />
-        </p>
-        <p class="mores">
-          Server Time 12H :&nbsp;<span class="spaninfo" id="servertime12H"
-            >0</span
-          ><br />
-        </p>
-        <p class="mores">
-          Server Time 24H :&nbsp;<span class="spaninfo" id="servertime24H"
-            >0</span
-          ><br />
-        </p>
-      </div>
-    </div>
-  </body>
+<div class="moreInfo">
+<h3>More Information :</h3>
+  <h4>Total and Max Days <span id="maxDays"></span></h4>
+  <h4>Your Time <span id="yourTime"></span></h4>
+  <h4>Your Date <span id="yourDate"></span></h4>
+  <h4>Server Time <span id="serverTime"></span></h4>
+  <h4>Server Date <span id="serverDate"></span></h4>
+  <h4>Year Percentage Decimals  <span id="yearPercentageDecimals"></span></h4>
+  <h4>Year Percentage Decimals (5 Digits)  <span id="yearPercentageDecimals5"></span></h4>
+  <h4>is Leap Year?   <span id="leapYear"></span></h4>
+</div>
+</div>
+
+
+  <p class="footer">This PBOFTY Inspired by Facebook Pages
+ <br>
+ <a href="https://www.facebook.com/progressofyear?mibextid=ZbWKwL">Progress Bar Of The Year <i class="bi bi-box-arrow-in-up-right"></i></a>
+  </p>
+  
+</body>
 </html>
+
