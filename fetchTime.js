@@ -18,7 +18,11 @@ export function waktu() {
         leapYear.innerHTML = "False"
       }
 
+var startDate = new Date("1/1/" + data.wib[0].year).getTime();
+var thisDate = new Date().getTime();
+var ongoingDate = Math.trunc((thisDate - startDate) / (1000 * 3600 * 24) + 1);
 
+                   
 var dateOngoing = Number(data.wib[0].unixtime);
 var yearOngoing = Number(data.wib[0].year);
 document.getElementById("thisYear").innerHTML = yearOngoing.toString();
@@ -41,7 +45,7 @@ barPercent.innerHTML = percent;
 progressBar.style.width = percentDecFive;
   
 var thisDate = JSON.stringify(data.wib[0].day).toString().replace(/"/g,"");
-maxDays.innerHTML = thisDate + "/" + maxdays;
+maxDays.innerHTML = ongoingDate + "/" + maxdays;
 yourTime.innerHTML = moment().format('LTS');
 yourDate.innerHTML = moment().format('L');
 serverTime.innerHTML = JSON.stringify(data.wib[0].time).toString().replace(/"/g,"");
