@@ -8,7 +8,7 @@ export function waktu() {
 
 //leap year check
   var maxdays;
-      let leap = new Date(data.wib[0].year, 1, 29).getDate() === 29;
+      let leap = new Date(data.year, 1, 29).getDate() === 29;
       //max days if leap year
       if (leap) {
         maxdays = "366";
@@ -18,13 +18,13 @@ export function waktu() {
         leapYear.innerHTML = "False"
       }
 
-var startDate = new Date("1/1/" + data.wib[0].year).getTime();
+var startDate = new Date("1/1/" + data.year).getTime();
 var thisDate = new Date().getTime();
 var ongoingDays = Math.trunc((thisDate - startDate) / (1000 * 3600 * 24) + 1);
 
                    
-var dateOngoing = Number(data.wib[0].unixtime);
-var yearOngoing = Number(data.wib[0].year);
+var dateOngoing = Number(data.unix);
+var yearOngoing = Number(data.year);
 document.getElementById("thisYear").innerHTML = yearOngoing.toString();
 // console.log(yearOngoing);
 
@@ -44,12 +44,12 @@ percentDecFive = ((dateOngoing - dateStartSeconds) / (dateEndSeconds - dateStart
 barPercent.innerHTML = percent;
 progressBar.style.width = percentDecFive;
   
-var thisDate = JSON.stringify(data.wib[0].day).toString().replace(/"/g,"");
+var thisDate = JSON.stringify(data.day).toString().replace(/"/g,"");
 maxDays.innerHTML = ongoingDays + "/" + maxdays;
 yourTime.innerHTML = moment().format('LTS');
 yourDate.innerHTML = moment().format('L');
-serverTime.innerHTML = JSON.stringify(data.wib[0].time).toString().replace(/"/g,"");
-serverDate.innerHTML = JSON.stringify(data.wib[0].date).toString().replace(/"/g,"");
+serverTime.innerHTML = JSON.stringify(data.times).toString().replace(/"/g,"");
+serverDate.innerHTML = JSON.stringify(data.date).toString().replace(/"/g,"");
 yearPercentageDecimals.innerHTML = percentDec;
 yearPercentageDecimals5.innerHTML = percentDecFive;
   
