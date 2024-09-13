@@ -1,8 +1,10 @@
+
 export function waktu() {
   fetch('https://timeapi.mininxd.my.id/?gmt=7')
 .then((res) => {
   return res.json();
-}).then((data) => {  console.log(data);
+}).then((data) => {  
+  //console.log(data);
 
 
 
@@ -43,11 +45,11 @@ percentDecFive = ((dateOngoing - dateStartSeconds) / (dateEndSeconds - dateStart
 
 barPercent.innerHTML = percent;
 progressBar.style.width = percentDecFive;
-  
+yourTime.innerHTML = moment().format('hh:mm:ss');
+yourDate.innerHTML = moment().format('L');
+
 var thisDate = JSON.stringify(data.day).toString().replace(/"/g,"");
 maxDays.innerHTML = ongoingDays + "/" + maxdays;
-yourTime.innerHTML = moment().format('LTS');
-yourDate.innerHTML = moment().format('L');
 serverTime.innerHTML = JSON.stringify(data.times).toString().replace(/"/g,"");
 serverDate.innerHTML = JSON.stringify(data.date).toString().replace(/"/g,"");
 yearPercentageDecimals.innerHTML = percentDec;
