@@ -1,6 +1,6 @@
 
 export function waktu() {
-  fetch('https://timeapi.mininxd.my.id/?gmt=7')
+  fetch('https://api-mininxd.vercel.app/timeapi/?gmt=7');
 .then((res) => {
   return res.json();
 }).then((data) => {  
