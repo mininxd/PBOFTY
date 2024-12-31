@@ -1,7 +1,6 @@
 
 export function waktu() {
-  fetch('https://api-mininxd.vercel.app/timeapi/?gmt=7')
-.then((res) => {
+  fetch('https://api-mininxd.vercel.app/timeapi/?gmt=7').then((res) => {
   return res.json();
 }).then((data) => {  
   //console.log(data);
@@ -45,8 +44,6 @@ percentDecFive = ((dateOngoing - dateStartSeconds) / (dateEndSeconds - dateStart
 
 barPercent.innerHTML = percent;
 progressBar.style.width = percentDecFive;
-yourTime.innerHTML = moment().format('hh:mm:ss');
-yourDate.innerHTML = moment().format('L');
 
 var thisDate = JSON.stringify(data.day).toString().replace(/"/g,"");
 maxDays.innerHTML = ongoingDays + "/" + maxdays;
